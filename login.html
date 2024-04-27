@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camcodia | Sign in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #fff;
+            width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+            transition: 0.5s;
+        }
+
+        form:hover {
+            box-shadow: -20px 30px 5px rgb(63, 63, 63);
+            transform: translate(20px, -40px);
+            /* transform: rotate(45deg); */
+            /* transform: scale(1.1, 1.1); */
+            /* transform: skewY(5deg); */
+            /* transform: matrix(1, 0, 0.5, 1, 150, 0); */
+        }
+
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="date"],
+        form select,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="file"] {
+            margin: 10px 0 10px 0;
+        }
+        input[type="radio"] {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="" id="">
+        <center><img src="images/camcodia-logo.png" alt="" width="200"></center>
+        <center><h3>Registration Page</h3></center>
+        <label for="fullname">Full name: </label>
+        <input type="text" id="fullname" name="fullname" required autocomplete="off" placeholder="Please enter your fullname">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female" class="space">female</label>
+
+        <input type="date" name="dob"><br>
+
+        <input type="file" name="file"><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">Select country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="U.S.A">U.S.A</option>
+        </select><br>
+        <input type="checkbox" name="terms" id="check-box">
+        <label for="check-box">accept terms and condition</label>
+
+
+        <button>Sign Up</button>
+    </form>
+</body>
+</html>
